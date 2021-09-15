@@ -11,6 +11,6 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.DISPATCH_TOKEN }}
+          token: ${{ secrets.DISPATCH_SECRET }}
           event-type: repository-a-release
           repository: Skarlso/repository-source
